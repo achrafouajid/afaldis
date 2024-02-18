@@ -1,0 +1,165 @@
+.navbar-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust based on your design preference */
+  width: 100%;
+  max-width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 0.75em;
+  font-weight: 600;
+}
+
+.logo {
+  height: 100px; /* Adjust the logo size as needed */
+}
+
+.header .nav .menu {
+  width: auto; /* Adjust width as needed */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Align menu items vertically */
+}
+
+.header .nav .menu li {
+  display: flex;
+  align-items: center; /* Centers items vertically within the li */
+  margin-left: 20px; /* Adjust as needed */
+  transition: opacity 0.5s ease;
+}
+.header .nav .menu li:hover {
+  opacity: 0.7; /* Adjust the value as needed */
+}
+
+.header .nav .menu .icon {
+  margin-right: 10px; /* Adds space between the icon and the text */
+}
+
+ul {
+  list-style: none;
+  font-size: 14px;
+}
+.nav .dropdown {
+  position: relative; /* Positions the dropdown relative to this element */
+  display: inline-block;
+}
+
+.nav .dropdown-content {
+  display: none;
+  position: absolute; /* Positions absolutely within the relative parent */
+  background-color: transparent; /* Make the dropdown background transparent */
+  min-width: 160px; /* Width of the dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Optional: for a slight shadow */
+  z-index: 1;
+  top: 100%; /* Positions the dropdown right below the parent element */
+  left: 0; /* Aligns the dropdown with the left edge of the parent element */
+}
+
+.nav .dropdown-content a {
+  color: black; /* Text color */
+  padding: 12px 16px; /* Padding inside dropdown */
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase; /* Same style as navbar-1 items */
+}
+
+/* Apply the opacity change only to the anchor tags on hover */
+.nav .dropdown-content a:hover {
+  opacity: 1; /* Adjust the value as needed */
+  transition: opacity 0.5s ease; /* Opacity transition for the anchor tags */
+}
+
+.nav .dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.navbar-2 {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(120px, 1fr)
+  ); /* Adjust as needed */
+  grid-gap: 10px; /* Space between grid items */
+  background-color: #009bce;
+  border: 2px solid white; /* Border around the entire navbar */
+}
+
+.navbar-2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Adjust as needed */
+}
+
+.navbar-2 ul li {
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+  justify-content: center; /* Horizontally centers the content */
+  border: 1px solid white; /* Border for each grid item */
+}
+
+.navbar-2 ul li a {
+  color: white; /* Adjust color as needed */
+  text-transform: uppercase; /* Capitalize each word */
+  padding: 15px; /* Adjust padding as needed */
+  transition: opacity 0.5s ease;
+}
+.navbar-2 ul li a:hover {
+  opacity: 0.7; /* Adjust the value as needed */
+}
+.navbar-2 ul li:first-child {
+  border-left: none;
+}
+
+.navbar-2 ul li:last-child {
+  border-right: none;
+}
+@media screen and (max-width: 813px) {
+  .nav-text {
+    display: none;
+  }
+  .icon {
+    font-size: 30px; /* Larger size for small screens */
+  }
+}
+/* Hamburger Menu Style */
+.hamburger {
+  display: none; /* Initially hidden */
+  /* Style your hamburger icon here (size, color, etc.) */
+}
+
+/* Dropdown Menu Style */
+.dropdown-menu {
+  /* Basic styling for dropdown menu */
+  background-color: white; /* Background color */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding inside the dropdown */
+  position: absolute; /* Positioning relative to its container */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.dropdown-menu ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.dropdown-menu li {
+  padding: 8px 12px; /* Padding for each item */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Slight change on hover */
+}
+
+.top-nav {
+  display: none;
+}
+
+/* ... Rest of your existing styles ... */
